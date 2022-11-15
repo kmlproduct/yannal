@@ -1,0 +1,72 @@
+.nav {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .logo {
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+
+    & > :not(:last-child) {
+      margin-right: 23px;
+    }
+    .basket {
+      position: relative;
+      div {
+        position: absolute;
+        left: 15px;
+        top: -15px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        border-radius: 50%;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+        color: white;
+      }
+    }
+    .humberger {
+      display: none;
+      padding: 3px;
+      border: 1px solid #aaaa;
+      div {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+        background: black;
+      }
+    }
+  }
+}
+@media (max-width: 840px) {
+  .nav {
+    .menu {
+      display: none;
+    }
+    .icons {
+      .humberger {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 366px) {
+  .nav {
+    padding: 14px;
+  }
+}

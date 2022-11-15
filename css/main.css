@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .menu li:not(:last-child) {
+  margin-right: 42px;
+}
+.nav .icons {
+  display: flex;
+  align-items: center;
+}
+.nav .icons > :not(:last-child) {
+  margin-right: 23px;
+}
+.nav .icons .basket {
+  position: relative;
+}
+.nav .icons .basket div {
+  position: absolute;
+  left: 15px;
+  top: -15px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border-radius: 50%;
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.nav .icons .humberger {
+  display: none;
+  padding: 3px;
+  border: 1px solid rgba(170, 170, 170, 0.6666666667);
+}
+.nav .icons .humberger div {
+  width: 20px;
+  height: 2px;
+  margin: 2px 0;
+  background: black;
+}
+
+@media (max-width: 840px) {
+  .nav .menu {
+    display: none;
+  }
+  .nav .icons .humberger {
+    display: block;
+  }
+}
+@media (max-width: 366px) {
+  .nav {
+    padding: 14px;
+  }
+}/*# sourceMappingURL=main.css.map */
